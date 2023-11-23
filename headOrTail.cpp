@@ -5,18 +5,19 @@
 
 int main(){
 	int input,remainder,selection1,selection2,userTurn,userScore=0,opponentTurn,opponentScore=0;
+	
 	printf("Enter 0 for tails and 1 for heads : ");
 	scanf("%d",&input);
 	
-	int player1;
+	int player;
 	printf("Your number : ");
-	scanf("%d",&player1);//input number upto 5
+	scanf("%d",&player);//input number upto 5
 	
-	int player2;
-	player2=rand()%5+1;//we have to take input upto 5
-	printf("Computer number : %d\n",player2);
+	int computer;
+	computer=rand()%5+1;//we have to take input upto 5
+	printf("Computer number : %d\n",computer);
 	
-	remainder=(player1+player2)%2;//if it comes 0 then it is tails and if it is 1 then it is heads
+	remainder=(player+computer)%2;//if it comes 0 then it is tails and if it is 1 then it is heads
 	
 	if(remainder==0 && input==0 || remainder==1 && input==1){
 		printf("YOU HAVE WON THE TOSS\n");
@@ -166,6 +167,9 @@ int main(){
 		else
 			printf("You have lost the game!");
 	}
+	
+	
+	
 	
 	return 0;
 }
