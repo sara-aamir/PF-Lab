@@ -1,3 +1,7 @@
+//pattern
+//***123
+//***123
+//***123
 #include <stdio.h>
 
 int main(){
