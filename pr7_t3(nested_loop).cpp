@@ -8,7 +8,7 @@ int main(){
 	for(i=1;i<=row;i++){
 			j=1;
 			while(j<=26){
-				printf("%c",ch);
+				printf(" %c ",ch);
 			ch++;
 			j++;
 			}	

@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<math.h>
-#include<time.h>
 
 void printStraight(int x[],int SIZE){
 	printf("Array :\n[");
@@ -18,7 +17,7 @@ void printReverse(int x[],int SIZE){
 }
 
 int main(){
-	const int SIZE=5;
+	int SIZE=5;
 	int array[SIZE]={4,3,2,6,8};
 	printStraight(array,SIZE);
 	printf("\n");
